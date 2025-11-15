@@ -82,24 +82,53 @@ The backend consists of **two independent APIs**:
 
 ```
 NGO/
-├─ backend/
-│   ├─ api/          # FastAPI routes
-│   ├─ clients/      # X API client + Model API client
-│   ├─ core/         # Settings & configuration
-│   ├─ db/           # SQLAlchemy engine, sessions, models
-│   ├── scripts/     # Reserved for future maintenance scripts (currently empty)
-│   ├── tests/       # Reserved for automated tests (currently empty)
-│   └── workers/     # Reserved for background tasks (currently unused)
+├─ backend/                     # Main backend API
+│ ├─ api/                       # FastAPI routes
+│ │ ├─ init.py
+│ │ └─ main.py
+│ │
+│ ├─ clients/                   # X API client + Model API client
+│ │ ├─ init.py
+│ │ ├─ ibtikar_client.py
+│ │ ├─ x_api.py
+│ │ └─ x_client.py
+│ │
+│ ├─ core/                     # Settings & configuration
+│ │ ├─ init.py
+│ │ ├─ config.py
+│ │ ├─ crypto.py
+│ │ ├─ memory.py
+│ │ ├─ normalize.py
+│ │ └─ schemas.py
+│ │
+│ ├─ db/                       # SQLAlchemy engine, sessions, models
+│ │ ├─ init.py
+│ │ ├─ init_db.py
+│ │ ├─ models.py
+│ │ └─ session.py
 │
-├─ IbtikarAI/        # Toxicity model microservice
-│   ├─ model.bin     # BERT weights
-│   └─ ibtikar_api.py
 │
-├─ ngodb.sqlite3     # Local database
-├─ .env              # Environment variables (not committed)
-├─ .env.example      # Template for developers
-├─ requirements.txt
-└─ README.md
+├─ IbtikarAI/                   # Toxicity model microservice
+│ ├─ arabert_toxic_classifier/
+│ │ ├─ config.json
+│ │ ├─ model.safetensors         # Model weights (Git LFS)
+│ │ ├─ special_tokens_map.json
+│ │ ├─ tokenizer_config.json
+│ │ ├─ tokenizer.json
+│ │ └─ vocab.txt
+│ │
+│ ├─ .gitattributes
+│ ├─ finetunning.py
+│ ├─ flip_code.py
+│ ├─ ibtikar_api.py               # Model inference API
+│ ├─ test.py
+│ └─ validation_test.py
+│
+├─ .env.example                   # Template for environment variables
+├─ .gitignore                     # Git ignore rules
+├─ LICENSE                        # MIT License
+├─ README.md
+└─ requirements.txt
 ```
 
 ---

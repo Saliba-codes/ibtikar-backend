@@ -1,5 +1,8 @@
 # **Ibtikar — Backend System**
 
+**Created by:** Saliba Rishmawi  
+**Initial Release:** 15th of November 2025
+
 ### _Full Documentation — Development • Deployment • API Reference_
 
 This repository contains the complete backend for **Ibtikar**, a system designed to:

@@ -1,0 +1,47 @@
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Python cache
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Local DB (never commit this)
+ngodb.sqlite3
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# PyTorch model cache
+*.bin
+*.pt
+*.pth
+
+# Pip wheel cache
+pip-wheel-metadata/
+
+# MacOS / Windows junk
+.DS_Store
+Thumbs.db
+
+# Generated files
+*.sqlite3-journal
+
+# IbtikarAI local data & env
+IbtikarAI/.venv/
+IbtikarAI/__pycache__/
+IbtikarAI/*.csv
+IbtikarAI/*.log

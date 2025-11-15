@@ -158,12 +158,20 @@ cp .env.example .env
 
 ### **4. Fill in the required values**
 
-```
-X_CLIENT_ID=...
-X_CLIENT_SECRET=...
-X_REDIRECT_URI=http://127.0.0.1:8000/v1/oauth/x/callback
-SECRET_KEY=YOUR_RANDOM_KEY
-MODEL_API_URL=http://127.0.0.1:9000/predict
+```env
+# --- X OAuth ---
+X_CLIENT_ID=YOUR_X_CLIENT_ID
+X_REDIRECT_URI=http://localhost:8000/v1/oauth/x/callback
+X_SCOPES=tweet.read users.read follows.read offline.access
+
+# --- Token Encryption ---
+FERNET_KEY=GENERATE_A_32_BYTE_KEY_BASE64
+
+# --- Database ---
+DATABASE_URL=sqlite:///./ngodb.sqlite3
+
+# --- Toxicity Model API URL ---
+IBTIKAR_URL=http://127.0.0.1:9000
 ```
 
 ---

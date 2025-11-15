@@ -15,7 +15,7 @@ This repository contains the complete backend for **Ibtikar**, a system designed
 
 ---
 
-# 📚 **Table of Contents**
+# **Table of Contents**
 
 1. [Project Overview](#project-overview)
 2. [Technology Stack](#technology-stack)
@@ -33,7 +33,7 @@ This repository contains the complete backend for **Ibtikar**, a system designed
 
 ---
 
-# 📌 **Project Overview**
+# **Project Overview**
 
 The backend consists of **two independent APIs**:
 
@@ -65,7 +65,7 @@ The backend consists of **two independent APIs**:
 
 ---
 
-# ⚙️ **Technology Stack**
+# **Technology Stack**
 
 | Layer        | Technology                     |
 | ------------ | ------------------------------ |
@@ -78,7 +78,7 @@ The backend consists of **two independent APIs**:
 
 ---
 
-# 📁 **Folder Structure**
+# **Folder Structure**
 
 ```
 NGO/
@@ -133,7 +133,7 @@ NGO/
 
 ---
 
-# 🛠️ **Environment Setup**
+# **Environment Setup**
 
 ### **1. Create a virtual environment**
 
@@ -168,7 +168,7 @@ MODEL_API_URL=http://127.0.0.1:9000/predict
 
 ---
 
-# 🚀 **How to Run the Backend**
+# **How to Run the Backend**
 
 You must run **two APIs** simultaneously.
 
@@ -200,7 +200,7 @@ Docs:
 
 ---
 
-# 🔑 **OAuth Guide (X/Twitter)**
+# **OAuth Guide (X/Twitter)**
 
 ### **1. Start OAuth**
 
@@ -230,7 +230,7 @@ The backend then:
 
 ---
 
-# 📊 **API Endpoints Summary**
+# **API Endpoints Summary**
 
 | Endpoint               | Method | Description                      |
 | ---------------------- | ------ | -------------------------------- |
@@ -243,7 +243,7 @@ The backend then:
 
 ---
 
-# 🧩 **Full API Reference**
+# **Full API Reference**
 
 ## **POST /v1/analysis/preview**
 
@@ -282,7 +282,7 @@ Returns aggregated statistics for each author:
 
 ---
 
-# 🗂️ **Database Schema**
+# **Database Schema**
 
 ### **Table: predictions**
 
@@ -308,7 +308,7 @@ UNIQUE(user_id, source, post_id)
 
 ---
 
-# 🧠 **Prediction Logic & Duplicate Prevention**
+# **Prediction Logic & Duplicate Prevention**
 
 For each fetched post:
 
@@ -324,7 +324,7 @@ This ensures:
 
 ---
 
-# ☁️ **Deployment Guide**
+# **Deployment Guide**
 
 ### **Local**
 
@@ -341,7 +341,7 @@ This ensures:
 
 ---
 
-# 🧷 **Maintainer Notes**
+# **Maintainer Notes**
 
 - Never commit `.env`
 - Regenerate `SECRET_KEY` before production
@@ -350,6 +350,6 @@ This ensures:
 
 ---
 
-# 📄 **License**
+# **License**
 
 This project is licensed under the MIT License.
